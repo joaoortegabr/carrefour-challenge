@@ -13,7 +13,7 @@ function getShopsList() {
     const shoplistLocation = "./listedshops.json";
     const options = {
         method: 'GET',
-        mode: 'cors',
+        // mode: 'cors',
         cache:'default'
     }
 
@@ -70,7 +70,7 @@ function findShopByCep() {
 
     const options = {
         method: 'GET',
-        mode:"cors",
+        // mode:"cors",
         cache:'default'
     };
 
@@ -104,7 +104,7 @@ function listOffers() {
     clearProductsPage();
     const options = {
         method: 'GET',
-        mode:"cors",
+        //mode:"cors",
         cache:'default'
     }
     
