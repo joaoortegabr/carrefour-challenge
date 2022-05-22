@@ -1,0 +1,137 @@
+[{
+	"id": "carrefourbr1056",
+	"tipo": "Hiper",
+	"bairro": "Brooklin",
+	"cep": "47001-000",
+	"latitude": "-23.62595948",
+	"longitude": "-46.68868889",
+	"distance": 0
+},
+{
+	"id": "carrefourbr106",
+	"tipo": "Hiper",
+	"bairro": "Pamplona",
+	"cep": "01405-002",
+	"latitude": "-23.57039478",
+	"longitude": "-46.66336289",
+	"distance": 0
+},
+{
+	"id": "carrefourbr110",
+	"tipo": "Hiper",
+	"bairro": "Interlagos",
+	"cep": "04661-902",
+	"latitude": "-23.67764188",
+	"longitude": "-46.67662739",
+	"distance": 0
+},
+{
+	"id": "carrefourbr112",
+	"tipo": "Hiper",
+	"bairro": "Morumbi",
+	"cep": "05724-030",
+	"latitude": "-23.55591418",
+	"longitude": "-46.57965349",
+	"distance": 0
+},
+{
+	"id": "carrefourbr115",
+	"tipo": "Market",
+	"bairro": "Paraíso",
+	"cep": "04003-040",
+	"latitude": "-23.57213058",
+	"longitude": "-46.64708729",
+	"distance": 0
+},
+{
+	"id": "carrefourbr116",
+	"tipo": "Hiper",
+	"bairro": "Villa Lobos",
+	"cep": "05317-000",
+	"latitude": "-23.54041958",
+	"longitude": "-46.73476419",
+	"distance": 0
+},
+{
+	"id": "carrefourbr146",
+	"tipo": "Hiper",
+	"bairro": "Pinheiros",
+	"cep": "04794-000",
+	"latitude": "-23.62953938",
+	"longitude": "-46.71291369",
+	"distance": 0
+},
+{
+	"id": "carrefourbr204",
+	"tipo": "Hiper",
+	"bairro": "Anchieta",
+	"cep": "04246-900",
+	"latitude": "-23.62715928",
+	"longitude": "-46.60031869",
+	"distance": 0
+},
+{
+	"id": "carrefourbr338",
+	"tipo": "Drogaria",
+	"bairro": "Vila Guilherme",
+	"cep": "02049-010",
+	"latitude": "-23.52750078",
+	"longitude": "-46.6267884",
+	"distance": 0
+},
+{
+	"id": "carrefourbr391",
+	"tipo": "Express",
+	"bairro": "Centro",
+	"cep":"01026-001",
+	"latitude": "-23.53552868",
+	"longitude": "-46.63370595",
+	"distance": 0
+},
+{
+	"id": "carrefourbr396",
+	"tipo": "Express",
+	"bairro": "Santana",
+	"cep": "02034-001",
+	"latitude": "-23.52594313",
+	"longitude": "-46.6335189",
+	"distance": 0
+},
+{
+	"id": "carrefourbr460",
+	"tipo": "Express",
+	"bairro": "Cambuci",
+	"cep": "01537-000",
+	"latitude": "-23.55098258",
+	"longitude": "-46.6315524",
+	"distance": 0
+},
+{
+	"id": "carrefourbr739",
+	"tipo": "Hiper",
+	"bairro": "Aricanduva",
+	"cep": "03490-000",
+	"latitude": "-23.54874748",
+	"longitude": "-46.5741684",
+	"distance": 0
+},
+{
+	"id": "carrefourbrfood996",
+	"tipo": "Hiper",
+	"bairro": "Tatuapé",
+	"cep": "03076-000",
+	"latitude": "-23.53809081",
+	"longitude": "-46.58151317",
+	"distance": 0
+},
+{
+	"id": "carrefourbrservicos",
+	"tipo": "Express",
+	"bairro": "Tatuapé",
+	"cep": "03310-000",
+	"latitude": "-23.54481096",
+	"longitude": "-46.56623047",
+	"distance": 0
+}]
+
+

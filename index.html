@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./style.css" rel="stylesheet" />
+    <title>Oferta na Mão - Carrefour</title>
+</head>
+<body>
+
+    <div id="container">
+        
+        <h1>Ofertas na Mão - Carrefour</h1>
+
+        <p>Tem sempre uma oferta Carrefour perto de você.</p>
+
+        <button onclick="detectCustomerCurrentLocation()">Detectar minha localização</button>
+        <div id="location"></div>
+
+        <div>Informe seu CEP:</div>
+        <form>
+            <div class="form-group">
+                <label for="cep"></label>
+                <input type="text" id="cep" maxlength="9">
+                <small>formato: 00000-000</small>
+            </div>
+        </form>
+        <button onclick="findShopByCep()">Search by CEP</button>
+        <button onclick="findNearestShop()">Find Nearest</button>
+        <button id="btn-list-offers" onclick="listOffers()">Ofertas mais próximas:</button>
+
+        <p id="selected-shop"></p>
+        <ul id="list"></ul>
+    </div>
+
+    <script type="text/javascript" src="./script.js"></script>
+    <script type="application/json" src="./listedShops.json"></script>
+</body>
+</html>
