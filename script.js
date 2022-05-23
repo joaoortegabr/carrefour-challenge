@@ -13,7 +13,7 @@ function getShopsList() {
     const shoplistLocation = "./listedshops.json";
     const options = {
         method: 'GET',
-        // mode: 'cors',
+        mode: 'no-cors',
         cache:'default'
     }
 
@@ -27,6 +27,7 @@ function getShopsList() {
         .catch(e => console.log("Erro: " + e.message));
     ;
 }
+
 
 
 function detectCustomerCurrentLocation() {
@@ -49,6 +50,10 @@ function detectCustomerCurrentLocation() {
                 location.innerHTML = 
                     `${data.principalSubdivision}`;
                     cep.value = data.postcode;
+                    console.log(data.latitude);
+                    console.log(data.longitude);
+                    console.log(data);
+                    
 
                     // Update customer current location to calculate distance from customer to nearest shops
                     userCurrentLatitude = data.latitude;
@@ -66,11 +71,12 @@ function detectCustomerCurrentLocation() {
 }
 
 
+
 function findShopByCep() {
 
     const options = {
         method: 'GET',
-        // mode:"cors",
+        mode:'no-cors',
         cache:'default'
     };
 
@@ -104,7 +110,7 @@ function listOffers() {
     clearProductsPage();
     const options = {
         method: 'GET',
-        //mode:"cors",
+        mode: 'no-cors',
         cache:'default'
     }
     
@@ -167,15 +173,19 @@ function findNearestShop() {
         distance = distance * 1.609344;
         
         shops[i].distance = distance;
+        console.log(shops[i].distance);
+
 
         if (nearestShop) {
             if (shops[i].distance < shops[i-1].distance) {
                 nearestShop = shops[i].bairro;
+                console.log(nearestShop);
                 }
             } else {
             nearestShop = shops[i].bairro;
         }
     }
+    console.log(nearestShop);
 }
 
 
