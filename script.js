@@ -1,7 +1,14 @@
 const cep = document.getElementById('cep');
 const list = document.getElementById('list');
 const selectedShop = document.getElementById('selected-shop');
-let nearestShop = "";
+let nearestShop = {
+    id: "",
+    tipo: "",
+    latitude: "",
+    longitude: "",
+    cep: "",
+    bairro: ""
+};
 let userCurrentLatitude = "";
 let userCurrentLongitude = "";
 let shops = [];
@@ -110,18 +117,20 @@ function listOffers() {
     clearProductsPage();
     const options = {
         method: 'GET',
-        mode: 'no-cors',
+        // mode: 'no-cors',
         cache:'default'
     }
     
+    /*
     let selectedNearestShop = "";
     for (let i in shops) {
         if (nearestShop == shops[i].bairro) {
             selectedNearestShop = shops[i].id;
         }
     }
- 
-    fetch(`https://mercado.carrefour.com.br/api/catalog_system/pub/products/search?fq=${selectedNearestShop}`, options)
+    */
+
+    fetch(`https://mercado.carrefour.com.br/api/catalog_system/pub/products/search?fq=${nearestShop.id}`, options)
         .then(response => response.json())
         .then(data => {
 
@@ -176,16 +185,23 @@ function findNearestShop() {
         console.log(shops[i].distance);
 
 
-        if (nearestShop) {
+        if (nearestShop.bairro) {
             if (shops[i].distance < shops[i-1].distance) {
-                nearestShop = shops[i].bairro;
-                console.log(nearestShop);
-                }
+                nearestShop.bairro = shops[i].bairro;
+                nearestShop.cep = shops[i].cep;
+                nearestShop.latitude = shops[i].latitude;
+                nearestShop.longitude = shops[i].longitude;
+                nearestShop.tipo = shops[i].tipo;
+                nearestShop.id = shops[i].id;
+            }
             } else {
-            nearestShop = shops[i].bairro;
+            nearestShop.bairro = shops[i].bairro;
         }
     }
-    console.log(nearestShop);
+
+
+    selectedShop.innerHTML =
+    `A loja mais próxima é a: ${nearestShop.bairro}`;
 }
 
 
