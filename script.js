@@ -185,8 +185,6 @@ function findShopByCep() {
     
 };
 
-
-
 // calculate distance based on latitude and longitude
 function findNearestShop(latitude1, longitude1) {
 
@@ -205,9 +203,6 @@ function findNearestShop(latitude1, longitude1) {
         distance = distance * 1.609344;
         
         shops[i].distance = distance;
-
-        console.log(shops[i].bairro);
-        console.log(shops[i].distance);
 
         if (i > 0) {
             if (shops[i].distance < shops[i-1].distance) {
@@ -230,6 +225,7 @@ function findNearestShop(latitude1, longitude1) {
                 id: shops[i].id
             }
         }
+        console.log(shops[i].bairro + ", " + shops[i].distance);
         console.log("mais próximo:" + nearestShop.bairro);
         
     }
