@@ -9,29 +9,30 @@
 </head>
 <body>
 
-    <div id="container">
+    <div id="container" style="margin: 20px;">
         
         <h1>Ofertas na Mão - Carrefour</h1>
 
         <p>Tem sempre uma oferta Carrefour perto de você.</p>
 
-        <button onclick="detectCustomerCurrentLocation()">Detectar minha localização</button>
-        <div id="location"></div>
+        <button onclick="detectCustomerLocation()">Buscar pela minha localização</button>
 
-        <div>Informe seu CEP:</div>
+        <div>Ou faça uma busca pelo seu CEP:</div>
         <form>
             <div class="form-group">
                 <label for="cep"></label>
-                <input type="text" id="cep" maxlength="9">
+                <input type="text" id="cep" maxlength="9"><br />
                 <small>formato: 00000-000</small>
             </div>
         </form>
-        <button onclick="findShopByCep()">Search by CEP</button>
-        <button onclick="findNearestShop()">Find Nearest</button>
-        <button id="btn-list-offers" onclick="listOffers()">Ofertas mais próximas:</button>
+        <button onclick="checkCep()">Buscar por CEP</button>
+        <button onclick="findShopByCep()">Buscar pela API Carrefour</button>
+
+        <hr style="margin: 20px 0;" />
+        <div id="location"></div>
 
         <p id="selected-shop"></p>
-        <ul id="list"></ul>
+        <ul id="product-list"></ul>
     </div>
 
     <script type="text/javascript" src="./script.js"></script>
