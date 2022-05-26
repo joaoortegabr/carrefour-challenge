@@ -13,19 +13,18 @@
         
         <h1>Ofertas na Mão - Carrefour</h1>
 
-        <p>Tem sempre uma oferta Carrefour perto de você.</p>
+        <p style="margin: 20px 0">Tem sempre uma oferta Carrefour perto de você.</p>
 
         <button onclick="detectCustomerLocation()">Buscar pela minha localização</button>
 
-        <div>Ou faça uma busca pelo seu CEP:</div>
+        <div style="margin-top: 20px">Ou faça uma busca pelo seu CEP:</div>
         <form>
             <div class="form-group">
                 <label for="cep"></label>
-                <input type="text" id="cep" maxlength="9"><br />
-                <small>formato: 00000-000</small>
+                <input type="text" id="cep" maxlength="9" placeholder="00000-000">
             </div>
         </form>
-        <button onclick="checkCep()">Buscar por CEP</button>
+        <button onclick="checkCep()" style="margin: 20px 0">Buscar por CEP</button>
         <button onclick="findShopByCep()">Buscar pela API Carrefour</button>
 
         <hr style="margin: 20px 0;" />
