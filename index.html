@@ -4,31 +4,54 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="./style.css" rel="stylesheet" />
+    <meta name="googlebot" content="noindex,nofollow" data-rh="true">
+    <meta name="robots" content="noindex,nofollow" data-rh="true">
+    <link rel="icon" href="https://mercado.carrefour.com.br/favicon-32x32.png?v=c23069826c8901f7037240f451571b4a" type="image/png">
+    <link rel="stylesheet" href="./style.css" />
     <title>Oferta na Mão - Carrefour</title>
 </head>
 <body>
 
-    <div id="container" style="margin: 20px;">
+    <div id="container">
         
-        <h1>Ofertas na Mão</h1>
-
-        <h3>Tem sempre uma oferta Carrefour perto de você.</h3>
-
-        <div>Por favor informe seu CEP:</div>
-        <form>
-            <div class="form-group">
-                <label for="cep"></label>
-                <input type="text" id="cep" maxlength="9" placeholder="00000-000" required>
+        <header>
+            <a href="https://www.carrefour.com.br/" target="_blank" alt="Visitar o site Carrefour"><img id="logo" src="https://carrefourbr.vtexassets.com/arquivos/logo-carrefour-site.png" crossorigin="anonymous" alt="Bem-vindo ao Carrefour" /></a>
+            <div class="heading">
+                <h1>Oferta na Mão</h1>
+                <h2>Tem sempre uma oferta Carrefour perto de você.</h2>
             </div>
-        </form>
-        <button onclick="findShopByCep()">Buscar</button>
+            <img id="hand" src="./img/hand.png" alt="Ícone de mão segurando celular" />
+        </header>
 
-        <p id="selected-shop"></p>
+        <main>
+            <div class="triangle">
+                <div>Detectar minha localização</div>
 
-        <hr style="margin: 20px 0;" />
+                <div>Fazer pesquisa pelo CEP</div>
+                <div class="input-group">
+                    <input type="text" id="cep" maxlength="9" placeholder="00000-000" required>
+                    <button id="search-button">Buscar</button>
+                </div>
+                <p id="selected-shop"></p>
+            </div>
+            
+            <ul id="product-list"></ul>
+        </main>
 
-        <ul id="product-list"></ul>
+        <footer>
+            <h4>Horário de atendimento:</h4>
+            <p>De segunda a domingo, das 08h às 21h</p>
+            <a href="https://api.whatsapp.com/send?phone=551130042222" target="_blank"><img src="https://carrefourbr.vtexassets.com/arquivos/carina-mobile-new-footer.png" crossorigin="anonymous" alt="Fale com o Carrefour" /></a>
+            <div class="social-media">
+                <ul>
+                    <li><a href="https://www.facebook.com/CarrefourBR/" target="_blank"><img src="https://carrefourbr.vtexassets.com/arquivos/facebook-footer.png" crossorigin="anonymous" alt="Facebook do Carrefour" /></a></li>
+                    <li><a href="https://twitter.com/carrefourbrasil" target="_blank"><img src="https://carrefourbr.vtexassets.com/arquivos/twitter-footer.png" crossorigin="anonymous" alt="Twitter do Carrefour" /></a></li>
+                    <li><a href="https://www.instagram.com/carrefourbrasil/" target="_blank"><img src="https://carrefourbr.vtexassets.com/arquivos/instagram-footer.png" crossorigin="anonymous" alt="Instagram do Carrefour" /></a></li>
+                    <li><a href="https://www.youtube.com/user/carrefourbrasil" target="_blank"><img src="https://carrefourbr.vtexassets.com/arquivos/youtube-footer.png" crossorigin="anonymous" alt="Canal no Youtube do Carrefour" /></a></li>
+                </ul>
+            </div>
+        </footer>
+
     </div>
 
     <script type="text/javascript" src="./script.js"></script>
