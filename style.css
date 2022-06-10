@@ -10,7 +10,7 @@
 */
 
 html { 
-    min-width: 320px; 
+    min-width: 340px; 
     max-width: 1400px; 
 }
 
@@ -24,27 +24,12 @@ body {
     line-height: 1.15rem;
 }
 
-#container {
-    position: absolute;
-    display: flex;
-    flex-flow: column wrap;
-    justify-content: center;
-    align-items: center;
-    margin: 0 auto;
-    width: 100%;
-    min-width: 360px;
-}
-
 header {
     display: flex;
     flex-flow: row wrap;
     align-items: flex-start;
     justify-content: space-evenly;
     margin: 20px 0 0 0;
-}
-
-.heading {
-    text-align: center;
 }
 
 main {
@@ -74,21 +59,6 @@ footer img {
     height: auto;
     margin: 0;
     padding: 0;
-}
-
-#logo {
-    position: relative;
-    top: 20px;
-    width: 10rem;
-    height: auto;
-    margin-bottom: 20px;
-}
-
-#hand {
-    width: 8%;
-    min-width: 70px;
-    height: auto;
-    position: right;
 }
 
 h1 {
@@ -139,22 +109,37 @@ a {
     text-decoration: none;
 }
 
-button {
-    margin-top: 0px;
-    width: 7.4rem;
-    height: 2rem;
-    padding: 4px;
-    font-size: 1rem;
-    color: #fff;
-    background-color: #ef3742;
-    border: 0;
-    border-radius: 0.2rem;
-    cursor: pointer;
+#container {
+    position: absolute;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    width: 100%;
+    min-width: 360px;
 }
 
-button:hover {
-    background-color: #ee4954;
-    cursor: pointer;
+
+/* HEADER */
+
+#logo {
+    position: relative;
+    top: 20px;
+    width: 10rem;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+#hand {
+    width: 8%;
+    min-width: 70px;
+    height: auto;
+    position: right;
+}
+
+.heading {
+    text-align: center;
 }
 
 .triangle {
@@ -181,6 +166,104 @@ button:hover {
     left: 50%;
     transform: translateX(-50%) translateY(100%);
 }
+
+#search-options button {
+    margin-top: 0px;
+    width: 7.4rem;
+    height: 2rem;
+    padding: 4px;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #ef3742;
+    border: 0;
+    border-radius: 0.2rem;
+    cursor: pointer;
+}
+
+#search-options button:hover {
+    background-color: #ee4954;
+    cursor: pointer;
+}
+
+#search-options {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+#search-options p {
+    margin-bottom: 10px;
+}
+
+#search-options > button {
+    width: 7.4rem;
+    height: 2rem;
+    padding: 4px;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #ef3742;
+    border: 0;
+    border-radius: 0.2rem;
+    cursor: pointer;
+}
+    
+#search-options > button:hover {
+    background-color: #ee4954;
+    cursor: pointer;
+}
+
+#search-by-gps {
+    display: block;
+    margin: 0 10px 10px 0;
+}
+
+#search-by-cep {
+    display: block;
+    margin: 0 10px 10px 0;
+}
+
+.search-box {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-items: space-around;
+}
+
+.input-group {
+    display: flex;
+    flex-flow: row;
+    align-items: flex-start;
+}
+
+input[type="text"] {
+    width: 7.4rem;
+    height: 2rem;
+    padding: 4px;
+    text-align: left;
+    font-size: 1.2rem;
+    background-color: #fff;
+    border: 1px solid #999;
+    border-radius: 0.3rem;
+    margin: 0 10px 0 0;
+}
+
+#location-result {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#selected-shop, #cep-origin {
+    margin: 5px 20px;
+    font-size: 1rem;
+    text-align: center;
+}
+
+
+/* MAIN */
 
 .product-box {
     display: flex;
@@ -230,12 +313,6 @@ button:hover {
     cursor: pointer;
 }
 
-#selected-shop {
-    margin: 5px 0;
-    font-size: 1rem;
-    text-align: center;
-}
-
 .discount-box {
     position: relative;
     float: right;
@@ -251,23 +328,6 @@ button:hover {
     font-weight: 700;
     color: #fff;
     font-size: 2rem;
-}
-
-.input-group {
-    display: inline-block;
-    margin-bottom: 20px;
-}
-
-input[type="text"] {
-    width: 7.4rem;
-    height: 2rem;
-    padding: 4px;
-    text-align: left;
-    font-size: 1.2rem;
-    background-color: #fff;
-    border: 1px solid #999;
-    border-radius: 0.2rem;
-    margin: 10px 10px 0 0;
 }
 
 .small, .brand {
@@ -286,6 +346,9 @@ input[type="text"] {
     font-weight: 700;
 }
 
+
+/* FOOTER */
+
 .social-media ul {
     display: inline;
     margin-top: 10px;
@@ -302,18 +365,11 @@ input[type="text"] {
     margin: 20px;
 }
 
+
+
+
 /* mobile size */
 @media screen and (max-width: 420px) {
-
-    #container {
-        position: absolute;
-        display: flex;
-        flex-flow: column wrap;
-        justify-content: center;
-        align-items: center;
-        margin: 0 auto;
-        width: 100%;
-    }
 
     header {
         display: flex;
@@ -363,23 +419,18 @@ input[type="text"] {
         max-width: 90%;
     }
 
-    button {
-        margin: 0;
-        width: 7.4rem;
-        height: 2rem;
-        padding: 4px;
-        font-size: 1rem;
-        color: #fff;
-        background-color: #ef3742;
-        border: 0;
-        border-radius: 0.2rem;
-        cursor: pointer;
+    #container {
+        position: absolute;
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+        width: 100%;
     }
-    
-    button:hover {
-        background-color: #ee4954;
-        cursor: pointer;
-    }
+
+
+    /* HEADER */
 
     #logo {
         position: relative;
@@ -399,10 +450,10 @@ input[type="text"] {
         flex-flow: column wrap;
         justify-content: center;
         align-items: center;
-        padding: 30px 0 5px 0;
+        padding: 20px 0 5px 0;
         background: #1852cc;
         color: #fff;
-        margin-bottom: 40px;
+        margin-bottom: 30px;
     }
     
     .triangle::before {
@@ -417,6 +468,74 @@ input[type="text"] {
         left: 50%;
         transform: translateX(-50%) translateY(100%);
     }
+
+    #search-options {
+        display: flex;
+        flex-flow: column wrap;
+        text-align: center;
+    }
+
+    #search-options p {
+        margin-bottom: 10px;
+    }
+    
+    #search-options button {
+        width: 7.4rem;
+        height: 2rem;
+        padding: 4px;
+        font-size: 1rem;
+        color: #fff;
+        background-color: #ef3742;
+        border: 0;
+        border-radius: 0.2rem;
+        cursor: pointer;
+    }
+        
+    #search-options button:hover {
+        background-color: #ee4954;
+        cursor: pointer;
+    }
+
+    #search-by-gps {
+        display: block;
+    }
+
+    #search-by-cep {
+        display: block;
+    }
+    
+    .search-box {
+        display: flex;
+        flex-flow: column wrap;
+        margin-bottom: 20px;
+    }
+
+    .input-group {
+        display: inline-block;
+        margin: 0;
+    }
+
+    input[type="text"] {
+        width: 7.4rem;
+        height: 2rem;
+        padding: 4px;
+        text-align: left;
+        font-size: 1.2rem;
+        background-color: #fff;
+        border: 2px;
+        border-radius: 0.2rem;
+        margin: 0 10px 0 0;
+    }
+
+    #selected-shop, #cep-origin {
+
+        padding: 0 0 10px 0;
+        font-size: 1rem;
+        text-align: center;
+    }
+
+
+        /* MAIN */
 
     .product-box {
         display: flex;
@@ -468,13 +587,6 @@ input[type="text"] {
         cursor: pointer;
     }
 
-    #selected-shop {
-        margin: 5px 0;
-        padding: 0 0 10px 0;
-        font-size: 1rem;
-        text-align: center;
-    }
-
     .discount-box {
         position: relative;
         float: right;
@@ -492,23 +604,6 @@ input[type="text"] {
         font-size: 2rem;
     }
 
-    .input-group {
-        display: inline-block;
-        margin-bottom: 20px;
-    }
-
-    input[type="text"] {
-        width: 7.4rem;
-        height: 2rem;
-        padding: 4px;
-        text-align: left;
-        font-size: 1.2rem;
-        background-color: #fff;
-        border: 2px;
-        border-radius: 0.2rem;
-        margin: 10px 10px 0 0;
-    }
-
     .small, .brand {
         font-size: 0.9rem;
     }
@@ -524,6 +619,9 @@ input[type="text"] {
         font-size: 2.2rem;
         font-weight: 700;
     }
+
+
+        /* FOOTER */
 
     .social-media ul {
         display: inline;

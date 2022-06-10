@@ -25,14 +25,23 @@
 
         <main>
             <div class="triangle">
-                <div>Detectar minha localização</div>
-
-                <div>Fazer pesquisa pelo CEP</div>
-                <div class="input-group">
-                    <input type="text" id="cep" maxlength="9" placeholder="00000-000" required>
-                    <button id="search-button">Buscar</button>
+                <div id="search-options">
+                    <div id="search-by-gps" class="search-box">
+                        <p>Detectar minha localização</p>
+                        <button id="gps-button">Detectar</button>
+                    </div>
+                    <div id="search-by-cep" class="search-box">
+                        <p>OU fazer pesquisa pelo CEP</p>
+                        <div class="input-group">
+                            <input type="text" id="cep" maxlength="9" placeholder="00000-000" required>
+                            <button id="cep-button">Buscar</button>
+                        </div>
+                    </div>
                 </div>
-                <p id="selected-shop"></p>
+                <div id="location-result">
+                    <p id="cep-origin"></p>
+                    <p id="selected-shop"></p>
+                </div>
             </div>
             
             <ul id="product-list"></ul>

@@ -4,7 +4,8 @@
 	"bairro": "Brooklin",
 	"cep": "47001-000",
 	"latitude": "-23.62595948",
-	"longitude": "-46.68868889"
+	"longitude": "-46.68868889",
+	"distance": ""
 },
 {
 	"id": "carrefourbr106",
@@ -12,7 +13,8 @@
 	"bairro": "Pamplona",
 	"cep": "01405-002",
 	"latitude": "-23.57039478",
-	"longitude": "-46.66336289"
+	"longitude": "-46.66336289",
+	"distance": ""
 },
 {
 	"id": "carrefourbr110",
@@ -20,7 +22,8 @@
 	"bairro": "Interlagos",
 	"cep": "04661-902",
 	"latitude": "-23.67764188",
-	"longitude": "-46.67662739"
+	"longitude": "-46.67662739",
+	"distance": ""
 },
 {
 	"id": "carrefourbr112",
@@ -28,7 +31,8 @@
 	"bairro": "Morumbi",
 	"cep": "05724-030",
 	"latitude": "-23.64199758",   
-	"longitude": "-46.73684449"
+	"longitude": "-46.73684449",
+	"distance": ""
 },
 {
 	"id": "carrefourbr115",
@@ -36,7 +40,8 @@
 	"bairro": "Paraíso",
 	"cep": "04003-040",
 	"latitude": "-23.57213058",
-	"longitude": "-46.64708729"
+	"longitude": "-46.64708729",
+	"distance": ""
 },
 {
 	"id": "carrefourbr116",
@@ -44,7 +49,8 @@
 	"bairro": "Villa Lobos",
 	"cep": "05317-000",
 	"latitude": "-23.54041958",
-	"longitude": "-46.73476419"
+	"longitude": "-46.73476419",
+	"distance": ""
 },
 {
 	"id": "carrefourbr146",
@@ -52,7 +58,8 @@
 	"bairro": "Pinheiros",
 	"cep": "04794-000",
 	"latitude": "-23.62953938",
-	"longitude": "-46.71291369"
+	"longitude": "-46.71291369",
+	"distance": ""
 },
 {
 	"id": "carrefourbr204",
@@ -60,7 +67,8 @@
 	"bairro": "Anchieta",
 	"cep": "04246-900",
 	"latitude": "-23.62715928",
-	"longitude": "-46.60031869"
+	"longitude": "-46.60031869",
+	"distance": ""
 },
 {
 	"id": "carrefourbr338",
@@ -68,7 +76,8 @@
 	"bairro": "Vila Guilherme",
 	"cep": "02049-010",
 	"latitude": "-23.52750078",
-	"longitude": "-46.6267884"
+	"longitude": "-46.6267884",
+	"distance": ""
 },
 {
 	"id": "carrefourbr391",
@@ -76,7 +85,8 @@
 	"bairro": "Centro",
 	"cep":"01026-001",
 	"latitude": "-23.53552868",
-	"longitude": "-46.63370595"
+	"longitude": "-46.63370595",
+	"distance": ""
 },
 {
 	"id": "carrefourbr396",
@@ -84,7 +94,8 @@
 	"bairro": "Santana",
 	"cep": "02034-001",
 	"latitude": "-23.52594313",
-	"longitude": "-46.6335189"
+	"longitude": "-46.6335189",
+	"distance": ""
 },
 {
 	"id": "carrefourbr460",
@@ -92,7 +103,8 @@
 	"bairro": "Cambuci",
 	"cep": "01537-000",
 	"latitude": "-23.55098258",
-	"longitude": "-46.6315524"
+	"longitude": "-46.6315524",
+	"distance": ""
 },
 {
 	"id": "carrefourbr739",
@@ -100,7 +112,8 @@
 	"bairro": "Aricanduva",
 	"cep": "03490-000",
 	"latitude": "-23.54874748",
-	"longitude": "-46.5741684"
+	"longitude": "-46.5741684",
+	"distance": ""
 },
 {
 	"id": "carrefourbrfood996",
@@ -108,7 +121,8 @@
 	"bairro": "Tatuapé",
 	"cep": "03076-000",
 	"latitude": "-23.53809081",
-	"longitude": "-46.58151317"
+	"longitude": "-46.58151317",
+	"distance": ""
 },
 {
 	"id": "carrefourbrservicos",
@@ -116,5 +130,6 @@
 	"bairro": "Tatuapé",
 	"cep": "03310-000",
 	"latitude": "-23.54481096",
-	"longitude": "-46.56623047"
+	"longitude": "-46.56623047",
+	"distance": ""
 }]
