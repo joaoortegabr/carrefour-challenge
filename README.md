@@ -1,6 +1,6 @@
-# carrefour-challenge
+# Tech Day Carrefour DIO
 
-Mini-projeto para participar do Tech Day Carrefour.
+Mini-projeto para participar do Tech Day Carrefour na DIO.
 O requisito era consumir uma API do Carrefour trazendo as lojas e as ofertas para os consumidores.
 
 Utilizei Javascript, HTML e CSS para construção de um hotsite que identifica a loja mais próxima com base em geolocalização, por detecção ou CEP informado, e lista as ofertas daquela loja.
